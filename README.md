@@ -62,6 +62,58 @@ docker run -d --name orchestris -p 8080:8080 -v orchestris-data:/data ghcr.io/or
 <sub>[Checksums](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.0/SHA256SUMS.txt) · [Linux signing key](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.0/orchestris-linux-release-key.asc) · [All files for this release](https://github.com/Orchestris-Inc/orchestris/releases/tag/server-community-v0.8.0)</sub>
 <!-- END latest:server-community -->
 
+## Install Orchestris Server Community Edition
+
+Every current target includes the Server API, hosted Chat, and the
+release-matched Admin UI. Hosted Chat opens at `/app/` on the Server origin;
+Admin uses its own local origin, `http://127.0.0.1:3000` by default.
+
+### Windows
+
+Run the signed `Orchestris-Setup-*-windows-x64.exe`. The wizard clearly reports
+whether it found a fresh installation, interrupted first setup, an existing
+installation to upgrade, or state that requires recovery. Fresh setup asks for
+the organization, first administrator, network access, API port, public API
+origin, and Admin port. After setup, open **Orchestris** from the Start Menu and
+use its tray menu to open Chat or Admin and to start, stop, restart, or inspect
+the two components. No Windows service is installed.
+
+### macOS
+
+The current package supports Apple Silicon on macOS 13.5 or newer. Install the
+signed and notarized `Orchestris-*-macos-arm64.pkg`, then open
+`/Applications/Orchestris/Orchestris.app`. The first-run window collects the
+organization, administrator credentials, API listener and port, Admin port,
+and public API origin. Existing installations receive an upgrade-preservation
+step instead. After setup, use the menu-bar icon to open Chat or Admin, control
+the application, view logs, change settings, or optionally enable Start at
+Login. It installs no privileged daemon.
+
+### Linux
+
+Verify the package and its matching detached `.asc` signature first. Install
+the downloaded DEB or RPM with the host package manager, then run:
+
+```bash
+sudo orchestris-setup
+sudo systemctl enable --now orchestris.target
+systemctl status --no-pager orchestris-api.service orchestris-admin.service
+```
+
+Guided setup creates the first organization administrator and configures both
+services. On a headless host, keep Admin on loopback and reach it with
+`ssh -L 3000:127.0.0.1:3000 user@server` unless you configure a trusted HTTPS
+reverse proxy.
+
+### Docker
+
+The image needs one-time `local-init` against the persistent
+`orchestris-data` volume before the normal long-running container is useful.
+Follow the [Docker installation guide](https://orchestris.com/docs/community-edition-docker)
+for the initialization, loopback-only Admin publication, health checks,
+backup, and upgrade commands. Do not treat the short `docker run` example in
+the release table as a complete first-install procedure.
+
 ## Want to double-check a download? (optional)
 
 Windows and macOS installers are code-signed and notarized, so your operating
