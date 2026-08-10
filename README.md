@@ -49,8 +49,8 @@ Released August 10, 2026 · [What's new](https://orchestris.com/docs/release-not
 | Platform | Download | Size |
 | --- | --- | --- |
 | **Windows** | [Orchestris-Setup-0.8.12-windows-x64.exe](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/Orchestris-Setup-0.8.12-windows-x64.exe) | 229 MB |
-| **macOS** | [Orchestris-0.8.12-macos-arm64.pkg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/Orchestris-0.8.12-macos-arm64.pkg) | 335 MB |
-| **macos** (dmg) | [Orchestris-Server-CE-0.8.12-macos-arm64.dmg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/Orchestris-Server-CE-0.8.12-macos-arm64.dmg) | 337 MB |
+| **macOS** (.dmg, recommended) | [Orchestris-Server-CE-0.8.12-macos-arm64.dmg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/Orchestris-Server-CE-0.8.12-macos-arm64.dmg) | 337 MB |
+| **macOS** (.pkg, MDM/command-line install) | [Orchestris-0.8.12-macos-arm64.pkg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/Orchestris-0.8.12-macos-arm64.pkg) | 335 MB |
 | **Linux** (.deb, Ubuntu/Debian) | [orchestris_0.8.12-1_amd64.deb](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/orchestris_0.8.12-1_amd64.deb) | 333 MB |
 | **Linux** (.rpm, Fedora/RHEL) | [orchestris-0.8.12-1.x86_64.rpm](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.12/orchestris-0.8.12-1.x86_64.rpm) | 331 MB |
 
@@ -81,14 +81,17 @@ the two components. No Windows service is installed.
 
 ### macOS
 
-The current package supports Apple Silicon on macOS 13.5 or newer. Install the
-signed and notarized `Orchestris-*-macos-arm64.pkg`, then open
-`/Applications/Orchestris/Orchestris.app`. The first-run window collects the
-organization, administrator credentials, API listener and port, Admin port,
-and public API origin. Existing installations receive an upgrade-preservation
-step instead. After setup, use the menu-bar icon to open Chat or Admin, control
-the application, view logs, change settings, or optionally enable Start at
-Login. It installs no privileged daemon.
+The current installers support Apple Silicon on macOS 13.5 or newer. For normal
+interactive setup, open the signed and notarized
+`Orchestris-Server-CE-*-macos-arm64.dmg` and run
+`Orchestris Server CE Installer.app`. The separately published raw `.pkg` is
+intended for MDM, command-line, and other unattended deployments. After
+installation, open `/Applications/Orchestris/Orchestris.app`. The first-run
+window collects the organization, administrator credentials, API listener and
+port, Admin port, and public API origin. Existing installations receive an
+upgrade-preservation step instead. After setup, use the menu-bar icon to open
+Chat or Admin, control the application, view logs, change settings, or
+optionally enable Start at Login. It installs no privileged daemon.
 
 ### Linux
 
