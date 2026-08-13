@@ -63,7 +63,7 @@ docker pull ghcr.io/orchestris-inc/orchestris-server-community:0.8.14
 
 [Docker installation guide](https://orchestris.com/docs/community-edition-docker)
 
-<sub>[Windows 0.8.15 checksum](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.15/SHA256SUMS-windows-x64.txt) · [0.8.14 checksums](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/SHA256SUMS.txt) · [Linux signing key](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-linux-release-key.asc) · [Windows hotfix files](https://github.com/Orchestris-Inc/orchestris/releases/tag/server-community-v0.8.15)</sub>
+<sub>[Linux and macOS 0.8.14 checksums](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/SHA256SUMS.txt) · [Windows 0.8.15 checksum](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.15/SHA256SUMS-windows-x64.txt) · [Linux signing key](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-linux-release-key.asc) · [Linux and macOS 0.8.14 files](https://github.com/Orchestris-Inc/orchestris/releases/tag/server-community-v0.8.14) · [Windows 0.8.15 files](https://github.com/Orchestris-Inc/orchestris/releases/tag/server-community-v0.8.15)</sub>
 <!-- END latest:server-community -->
 
 ## Install Orchestris Server Community Edition
