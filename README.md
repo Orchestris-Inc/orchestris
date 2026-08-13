@@ -25,12 +25,12 @@ Pick your platform below and download the installer.
 
 Released August 13, 2026 · [What's new](https://orchestris.com/docs/release-notes)
 
-| Platform | Download | Size |
+| Platform | Download & install | Size |
 | --- | --- | --- |
-| **Windows**<br><sub>Windows 10</sub> | [orchestris-chat-windows-x64-0.4.18-40-setup.exe](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat-windows-x64-0.4.18-40-setup.exe) | 22 MB |
-| **macOS**<br><sub>macOS 11 (Apple silicon)</sub> | [orchestris-chat-macos-arm64-0.4.18-40.pkg](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat-macos-arm64-0.4.18-40.pkg) | 41 MB |
-| **Linux** (.deb, Ubuntu/Debian)<br><sub>glibc 2.35+ (Ubuntu 22.04+)</sub> | [orchestris-chat_0.4.18-40_amd64.deb](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat_0.4.18-40_amd64.deb) | 23 MB |
-| **Linux** (.rpm, Fedora/RHEL)<br><sub>glibc 2.35+ (Fedora 36+)</sub> | [orchestris-chat-0.4.18-40.x86_64.rpm](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat-0.4.18-40.x86_64.rpm) | 23 MB |
+| **Windows**<br><sub>Windows 10</sub> | [orchestris-chat-windows-x64-0.4.18-40-setup.exe](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat-windows-x64-0.4.18-40-setup.exe)<br><br><sub>Install from the download folder:</sub><br><code>.\orchestris-chat-windows-x64-0.4.18-40-setup.exe</code> | 22 MB |
+| **macOS**<br><sub>macOS 11 (Apple silicon)</sub> | [orchestris-chat-macos-arm64-0.4.18-40.pkg](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat-macos-arm64-0.4.18-40.pkg)<br><br><sub>Install from the download folder:</sub><br><code>sudo /usr/sbin/installer -pkg ./orchestris-chat-macos-arm64-0.4.18-40.pkg -target /</code> | 41 MB |
+| **Linux** (.deb, Ubuntu/Debian)<br><sub>glibc 2.35+ (Ubuntu 22.04+)</sub> | [orchestris-chat_0.4.18-40_amd64.deb](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat_0.4.18-40_amd64.deb)<br><br><sub>Install from the download folder:</sub><br><code>sudo apt install ./orchestris-chat_0.4.18-40_amd64.deb</code> | 23 MB |
+| **Linux** (.rpm, Fedora/RHEL)<br><sub>glibc 2.35+ (Fedora 36+)</sub> | [orchestris-chat-0.4.18-40.x86_64.rpm](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-chat-0.4.18-40.x86_64.rpm)<br><br><sub>Install from the download folder:</sub><br><code>sudo dnf install ./orchestris-chat-0.4.18-40.x86_64.rpm</code> | 23 MB |
 
 <sub>[Checksums](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/SHA256SUMS.txt) · [Linux signing key](https://github.com/Orchestris-Inc/orchestris/releases/download/client-v0.4.18-40/orchestris-linux-release-key.asc) · [All files for this release](https://github.com/Orchestris-Inc/orchestris/releases/tag/client-v0.4.18-40)</sub>
 <!-- END latest:client -->
@@ -46,20 +46,22 @@ is bundled in the installer (or the Docker image, if you prefer containers).
 
 Released August 12, 2026 · [What's new](https://orchestris.com/docs/release-notes)
 
-| Platform | Download | Size |
+| Platform | Download & install | Size |
 | --- | --- | --- |
-| **Windows** | [Orchestris-Setup-0.8.15-windows-x64.exe](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.15/Orchestris-Setup-0.8.15-windows-x64.exe) | 233 MB |
-| **macOS** | [Orchestris-0.8.14-macos-arm64.pkg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/Orchestris-0.8.14-macos-arm64.pkg) | 340 MB |
-| **macos** (dmg) | [Orchestris-Server-CE-0.8.14-macos-arm64.dmg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/Orchestris-Server-CE-0.8.14-macos-arm64.dmg) | 343 MB |
-| **Linux** (.deb, Ubuntu/Debian) | [orchestris_0.8.14-1_amd64.deb](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris_0.8.14-1_amd64.deb) | 338 MB |
-| **Linux** (.rpm, Fedora/RHEL) | [orchestris-0.8.14-1.x86_64.rpm](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-0.8.14-1.x86_64.rpm) | 336 MB |
-| **linux** (tar.gz) | [orchestris-0.8.14-linux-x64.tar.gz](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-0.8.14-linux-x64.tar.gz) | 342 MB |
+| **Windows** | [Orchestris-Setup-0.8.15-windows-x64.exe](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.15/Orchestris-Setup-0.8.15-windows-x64.exe)<br><br><sub>Install from the download folder:</sub><br><code>.\Orchestris-Setup-0.8.15-windows-x64.exe</code> | 233 MB |
+| **macOS** (.dmg) **(Recommended)** | [Orchestris-Server-CE-0.8.14-macos-arm64.dmg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/Orchestris-Server-CE-0.8.14-macos-arm64.dmg)<br><br><sub>Install from the download folder:</sub><br><code>open ./Orchestris-Server-CE-0.8.14-macos-arm64.dmg</code><br><sub>Then open Orchestris Server CE Installer.</sub> | 343 MB |
+| **macOS** (.pkg) | [Orchestris-0.8.14-macos-arm64.pkg](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/Orchestris-0.8.14-macos-arm64.pkg)<br><br><sub>Install from the download folder:</sub><br><code>sudo /usr/sbin/installer -pkg ./Orchestris-0.8.14-macos-arm64.pkg -target /</code><br><code>open &quot;/Applications/Orchestris/Orchestris.app&quot;</code> | 340 MB |
+| **Linux** (.deb, Ubuntu/Debian) | [orchestris_0.8.14-1_amd64.deb](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris_0.8.14-1_amd64.deb)<br><br><sub>Install from the download folder:</sub><br><code>sudo apt install ./orchestris_0.8.14-1_amd64.deb</code><br><code>sudo orchestris-setup</code> | 338 MB |
+| **Linux** (.rpm)<br><sub>Fedora, RHEL, Rocky Linux, AlmaLinux, or openSUSE</sub> | [orchestris-0.8.14-1.x86_64.rpm](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-0.8.14-1.x86_64.rpm)<br><br><sub>Install from the download folder:</sub><br><sub>Fedora/RHEL family:</sub><br><code>sudo dnf install ./orchestris-0.8.14-1.x86_64.rpm</code><br><sub>openSUSE:</sub><br><code>sudo zypper --no-gpg-checks install ./orchestris-0.8.14-1.x86_64.rpm</code><br><code>sudo orchestris-setup</code> | 336 MB |
+| **Linux** (.tar.gz)<br><sub>Portable installer</sub> | [orchestris-0.8.14-linux-x64.tar.gz](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-0.8.14-linux-x64.tar.gz)<br><br><sub>Install from the download folder:</sub><br><code>tar -xzf ./orchestris-0.8.14-linux-x64.tar.gz &amp;&amp; cd ./orchestris-0.8.14-linux-x64</code><br><code>sudo packaging/linux/tar/install.sh --source-dir &quot;$PWD&quot; --enable --start</code><br><code>sudo orchestris-setup</code> | 342 MB |
 
-Prefer Docker? The same release is published as a container image:
+Prefer Docker? Pull the versioned image, then follow the complete first-install guide:
 
 ```bash
-docker run -d --name orchestris -p 8080:8080 -v orchestris-data:/data ghcr.io/orchestris-inc/orchestris-server-community:0.8.14
+docker pull ghcr.io/orchestris-inc/orchestris-server-community:0.8.14
 ```
+
+[Docker installation guide](https://orchestris.com/docs/community-edition-docker)
 
 <sub>[Windows 0.8.15 checksum](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.15/SHA256SUMS-windows-x64.txt) · [0.8.14 checksums](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/SHA256SUMS.txt) · [Linux signing key](https://github.com/Orchestris-Inc/orchestris/releases/download/server-community-v0.8.14/orchestris-linux-release-key.asc) · [Windows hotfix files](https://github.com/Orchestris-Inc/orchestris/releases/tag/server-community-v0.8.15)</sub>
 <!-- END latest:server-community -->
@@ -113,8 +115,8 @@ The image needs one-time `local-init` against the persistent
 `orchestris-data` volume before the normal long-running container is useful.
 Follow the [Docker installation guide](https://orchestris.com/docs/community-edition-docker)
 for the initialization, loopback-only Admin publication, health checks,
-backup, and upgrade commands. Do not treat the short `docker run` example in
-the release table as a complete first-install procedure.
+backup, and upgrade commands. The `docker pull` command in the release table
+only downloads the image; it is not the complete first-install procedure.
 
 ## Want to double-check a download? (optional)
 
